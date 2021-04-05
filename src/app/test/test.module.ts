@@ -7,6 +7,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from '@angular/material/input';
 
 
+
 export const route=[
   {path:'',component:TestComponent,pathMatch:'full'}
 ];
@@ -20,6 +21,7 @@ export const route=[
     MatInputModule,
     FormsModule,
     ReactiveFormsModule
+    
     
   ]
 })

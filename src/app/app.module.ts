@@ -4,17 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Test2Component } from './test2/test2.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DepoComponent } from './depo/depo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Test2Component
+    DepoComponent
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
