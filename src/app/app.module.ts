@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DepoComponent } from './depo/depo.component';
+import { EkipmanComponent } from './ekipman/ekipman.component';
+import { ZimmetComponent } from './zimmet/zimmet.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    DepoComponent
+    EkipmanComponent,
+    ZimmetComponent,
+    
     ],
   imports: [
     BrowserModule,

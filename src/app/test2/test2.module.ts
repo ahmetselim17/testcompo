@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { Test2Component } from './test2.component';
 import { RouterModule } from '@angular/router';
 
+
+import {MatSelectModule} from '@angular/material/select'; 
+
 export const route=[
   {path:'',component:Test2Component,pathMatch:'full'}
 ];
@@ -11,7 +14,8 @@ export const route=[
   declarations: [Test2Component],
   imports: [
     CommonModule,
-    RouterModule.forChild(route)
+    RouterModule.forChild(route),
+    MatSelectModule
   ]
 })
 export class Test2Module { }

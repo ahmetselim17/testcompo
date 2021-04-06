@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 @Component({
-  selector: 'app-depo',
-  templateUrl: './depo.component.html',
-  styleUrls: ['./depo.component.scss']
+  selector: 'app-ekipman',
+  templateUrl: './ekipman.component.html',
+  styleUrls: ['./ekipman.component.scss']
 })
-export class DepoComponent implements OnInit {
+export class EkipmanComponent implements OnInit {
 
   constructor() { }
 
