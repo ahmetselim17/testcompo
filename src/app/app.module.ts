@@ -12,7 +12,8 @@ import { Deneme1Component } from './deneme1/deneme1.component';
   declarations: [
     AppComponent,
     
-    Deneme1Component
+    Deneme1Component,
+          
     ],
   imports: [
     BrowserModule,
