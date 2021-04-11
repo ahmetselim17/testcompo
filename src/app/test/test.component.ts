@@ -21,13 +21,14 @@ interface Car {
 )
 export class TestComponent implements OnInit {
   email = new FormControl('', [Validators.required, Validators.email]);
-  depoTipleri: string[] = ['Ekip Depo', 'Dolu Depo', 'Boş Depo' ];
+  depoTipleri: any[] = ['Ekip Depo', 'Dolu Depo', 'Boş Depo' ];
   depoBirimleri: string[] = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
   depoEkipleri: string[] = ['Eyüpsultan', 'Dere-2', 'Sarıyer', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
   depoUstleri: string[] = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
   depoYoneticileri: string[] = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
  
   ngOnInit(): void {
+ 
   }
 
   getErrorMessage() {

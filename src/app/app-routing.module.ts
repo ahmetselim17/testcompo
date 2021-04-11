@@ -6,7 +6,10 @@ export const routes: Routes = [
     path:'',
    loadChildren:()=>import('./test/test.module').then(m=>m.TestModule)
   },
-
+  {
+    path:'depo',
+   loadChildren:()=>import('./depo/depo.module').then(m=>m.DepoModule)
+  },
   {
     path:'test2',
    loadChildren:()=>import('./test2/test2.module').then(m=>m.Test2Module)

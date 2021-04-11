@@ -1,73 +1,69 @@
 <div class="container-fluid">
+  <div class="d-flex justify-content-center">
+    <mat-form-field class="example-full-width">
+      <mat-label>Depo Adı</mat-label>
+      <input matInput placeholder="Örn. Levent" value="">
+    </mat-form-field>
+  </div>
 
-    <div class="d-flex justify-content-center">
-      <mat-form-field class="example-full-width">
-        <mat-label>Depo Adı</mat-label>
-        <input matInput placeholder="Örn. Levent" value="">
-      </mat-form-field>
-    </div>
-  
-  <div class="d-flex justify-content-center">
-    <mat-form-field appearance="fill">
-      <mat-label>Depo Tipi</mat-label>
-      <mat-select>
-        <mat-option>None</mat-option>
-        <mat-option *ngFor="let depoTipi of depoTipleri" [value]="depoTipi">{{depoTipi}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-  
-  </div>
-  
-  <div class="d-flex justify-content-center">
-    <mat-form-field appearance="fill">
-      <mat-label>Birim</mat-label>
-      <mat-select>
-        <mat-option>None</mat-option>
-        <mat-option *ngFor="let depoBirim of depoBirimleri" [value]="depoBirim">{{depoBirim}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-  
-  </div>
-  
-  <div class="d-flex justify-content-center">
-    <mat-form-field appearance="fill">
-      <mat-label>Ekip</mat-label>
-      <mat-select>
-        <mat-option>None</mat-option>
-        <mat-option *ngFor="let depoEkip of depoEkipleri" [value]="depoEkip">{{depoEkip}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-  
-  </div>
-  
-  
-  <div class="d-flex justify-content-center">
-    <mat-form-field appearance="fill">
-      <mat-label>Üst Depo</mat-label>
-      <mat-select>
-        <mat-option>None</mat-option>
-        <mat-option *ngFor="let depoUst of depoUstleri" [value]="depoUst">{{depoUst}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-  
-  </div>
-  
-  <div class="d-flex justify-content-center">
-    <mat-form-field appearance="fill">
-      <mat-label>Depo Yön</mat-label>
-      <mat-select>
-        <mat-option>None</mat-option>
-        <mat-option *ngFor="let depoYoneticisi of depoYoneticileri" [value]="depoYoneticisi">{{depoYoneticisi}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-  
-  </div>
-  
-  
-    
-  </div>
-  
-  
-  
-  
-   
+<div class="d-flex justify-content-center">
+  <mat-form-field appearance="fill">
+    <mat-label>Depo Tipi</mat-label>
+    <mat-select>
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let depoTipi of depoTipleri" [value]="depoTipi">{{depoTipi}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>
+
+<div class="d-flex justify-content-center">
+  <mat-form-field appearance="fill">
+    <mat-label>Birim</mat-label>
+    <mat-select>
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let depoBirim of depoBirimleri" [value]="depoBirim">{{depoBirim}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>
+
+<div class="d-flex justify-content-center">
+  <mat-form-field appearance="fill">
+    <mat-label>Ekip</mat-label>
+    <mat-select>
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let depoEkip of depoEkipleri" [value]="depoEkip">{{depoEkip}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>
+
+
+<div class="d-flex justify-content-center">
+  <mat-form-field appearance="fill">
+    <mat-label>Üst Depo</mat-label>
+    <mat-select>
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let depoUst of depoUstleri" [value]="depoUst">{{depoUst}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>
+
+<div class="d-flex justify-content-center">
+  <mat-form-field appearance="fill">
+    <mat-label>Depo Yön</mat-label>
+    <mat-select>
+      <mat-option>None</mat-option>
+      <mat-option *ngFor="let depoYoneticisi of depoYoneticileri" [value]="depoYoneticisi">{{depoYoneticisi}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+
+
+</div>
+
+
+ 
