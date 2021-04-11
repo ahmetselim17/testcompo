@@ -21,12 +21,22 @@ interface Car {
 )
 export class TestComponent implements OnInit {
   email = new FormControl('', [Validators.required, Validators.email]);
-  depoTipleri: string[] = ['Ekip Depo', 'Dolu Depo', 'Boş Depo' ];
-  depoBirimleri: string[] = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
-  depoEkipleri: string[] = ['Eyüpsultan', 'Dere-2', 'Sarıyer', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
-  depoUstleri: string[] = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
-  depoYoneticileri: string[] = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
- 
+  selectedValue: string;
+  selectedCar: string;
+
+  foods: Food[] = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'}
+  ];
+
+  cars: Car[] = [
+    {value: 'volvo', viewValue: 'Volvo'},
+    {value: 'saab', viewValue: 'Saab'},
+    {value: 'mercedes', viewValue: 'Mercedes'}
+  ];
+  constructor() {this.selectedCar=''; this.selectedValue=""; }
+
   ngOnInit(): void {
   }
 
