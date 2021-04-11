@@ -7,6 +7,8 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from '@angular/material/input';
 
 
+import {MatSelectModule} from '@angular/material/select'; 
+
 
 export const route=[
   {path:'',component:TestComponent,pathMatch:'full'}
@@ -20,7 +22,10 @@ export const route=[
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule
+    
+    
     
     
   ]
