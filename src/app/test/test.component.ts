@@ -13,6 +13,9 @@ interface Car {
   viewValue: string;
 }
 
+
+
+
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
@@ -26,7 +29,8 @@ export class TestComponent implements OnInit {
   depoEkipleri: string[] = ['Eyüpsultan', 'Dere-2', 'Sarıyer', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
   depoUstleri: string[] = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
   depoYoneticileri: string[] = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware' ];
- 
+  date = new FormControl(new Date());
+  serializedDate = new FormControl((new Date()).toISOString());
   ngOnInit(): void {
  
   }
@@ -45,3 +49,4 @@ export class TestComponent implements OnInit {
 
  
 }
+

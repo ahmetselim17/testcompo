@@ -10,6 +10,17 @@ export const routes: Routes = [
     path:'depo',
    loadChildren:()=>import('./depo/depo.module').then(m=>m.DepoModule)
   },
+
+  {
+    path:'ekipman',
+   loadChildren:()=>import('./ekipman/ekipman.module').then(m=>m.EkipmanModule)
+  },
+
+  // {
+  //   path:'zimmet',
+  //  loadChildren:()=>import('./zimmet/zimmet.module').then(m=>m.ZimmetModule)
+  // },
+
   {
     path:'test2',
    loadChildren:()=>import('./test2/test2.module').then(m=>m.Test2Module)
