@@ -1,52 +1,54 @@
 <div class="container-fluid">
-    <div class="d-flex justify-content-center">
-    <mat-form-field appearance="fill">
-      <mat-label>Stok Adı</mat-label>
-      <mat-select>
-        <mat-option>None</mat-option>
-        <mat-option *ngFor="let stokAdi of stokAdlari" [value]="stokAdi">{{stokAdi}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-  
-  </div> 
-  
-  <div class="container-fluid">
-    <div class="d-flex justify-content-center">
-    <mat-form-field appearance="fill">
-      <mat-label>Depo Adı</mat-label>
-      <mat-select>
-        <mat-option>None</mat-option>
-        <mat-option *ngFor="let zimmetDepoAdi of zimmetDepoAdlari" [value]="zimmetDepoAdi">{{zimmetDepoAdi}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-  
-  </div>
-  
-  <div class="container-fluid">
-    <div class="d-flex justify-content-center">
-      <div class="container-fluid">
-        <div class="d-flex justify-content-center">
-          <mat-form-field class="example-full-width">
-            <mat-label>Miktar</mat-label>
-            <input matInput placeholder="Örn. 335 Kilogram " value="">
-          </mat-form-field>
-        </div>
-  
+      <div class="d-flex justify-content-center">
+      <mat-form-field appearance="fill">
+        <mat-label>Stok Adı</mat-label>
+        <mat-select>
+          <mat-option>None</mat-option>
+          <mat-option *ngFor="let stokAdi of stokAdlari" [value]="stokAdi">{{stokAdi}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    
+    </div> 
+
+    <div class="container-fluid">
+      <div class="d-flex justify-content-center">
+      <mat-form-field appearance="fill">
+        <mat-label>Depo Adı</mat-label>
+        <mat-select>
+          <mat-option>None</mat-option>
+          <mat-option *ngFor="let zimmetDepoAdi of zimmetDepoAdlari" [value]="zimmetDepoAdi">{{zimmetDepoAdi}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    
+    </div>
+    
+    <div class="container-fluid">
+      <div class="d-flex justify-content-center">
         <div class="container-fluid">
           <div class="d-flex justify-content-center">
-            <div class="container-fluid">
-              <div class="d-flex justify-content-center">
-                <mat-form-field appearance="fill">
-                  <mat-label>Zimmet Alan Kişi</mat-label>
-                  <mat-select>
-                    <mat-option>None</mat-option>
-                    <mat-option *ngFor="let alanKisi of alanKisiler" [value]="alanKisi">{{alanKisi}}</mat-option>
-                  </mat-select>
-                </mat-form-field>
-              </div> 
-  
-  
-  
-  
-  </div>
-  </div> 
+            <mat-form-field class="example-full-width">
+              <mat-label>Miktar</mat-label>
+              <input matInput placeholder="Örn. 335 Kilogram " value="">
+            </mat-form-field>
+          </div>
+
+          <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+              <div class="container-fluid">
+                <div class="d-flex justify-content-center">
+                  <mat-form-field appearance="fill">
+                    <mat-label>Zimmet Alan Kişi</mat-label>
+                    <mat-select>
+                      <mat-option>None</mat-option>
+                      <mat-option *ngFor="let alanKisi of alanKisiler" [value]="alanKisi">{{alanKisi}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div> 
+
+    
+   
+
+</div>
+</div>
+
+ 

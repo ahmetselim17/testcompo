@@ -16,15 +16,18 @@ export const routes: Routes = [
    loadChildren:()=>import('./ekipman/ekipman.module').then(m=>m.EkipmanModule)
   },
 
-  {
-    path:'zimmet',
-   loadChildren:()=>import('./zimmet/zimmet.module').then(m=>m.ZimmetModule)
-  },
 
   {
     path:'test2',
    loadChildren:()=>import('./test2/test2.module').then(m=>m.Test2Module)
+  },
+
+
+  {
+    path:'zimmet',
+   loadChildren:()=>import('./zimmet/zimmet.module').then(m=>m.ZimmetModule)
   }
+
 ];
 
 @NgModule({
