@@ -5,8 +5,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-depo',
-  templateUrl: './depo.component.html',
-  styleUrls: ['./depo.component.scss']
+  templateUrl: './zimmet.component.html',
+  styleUrls: ['./zimmet.component.scss']
 }
 )
 export class ZimmetComponent implements OnInit {
@@ -18,10 +18,6 @@ export class ZimmetComponent implements OnInit {
 
   }
 
-  onSecildi(){
-    console.info("kemlelrserfse");
-  }
-
-
  
+
 }
