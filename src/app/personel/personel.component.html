@@ -1,0 +1,293 @@
+<div class="container-fluid"> 
+    <div class="d-flex justify-content-center">
+      <mat-form-field appearance="fill">
+        <mat-label>Sicil No</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </div>
+
+    <div class="container-fluid"> 
+        <div class="d-flex justify-content-center">
+          <mat-form-field appearance="fill">
+            <mat-label>Personel  Kimlik No</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </div>
+
+        <div class="container-fluid"> 
+            <div class="d-flex justify-content-center">
+              <mat-form-field appearance="fill">
+                <mat-label>Adı</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+
+            <div class="container-fluid"> 
+                <div class="d-flex justify-content-center">
+                  <mat-form-field appearance="fill">
+                    <mat-label>Soyadı</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+                </div>
+
+                <div class="container-fluid"> 
+                    <div class="d-flex justify-content-center">
+                      <mat-form-field appearance="fill">
+                        <mat-label>Adres</mat-label>
+                        <textarea matInput></textarea>
+                      </mat-form-field>
+                    </div>
+
+                    <div class="container-fluid"> 
+                        <div class="d-flex justify-content-center">
+                          <mat-form-field appearance="fill">
+                            <mat-label>Telefon No</mat-label>
+                            <input matInput>
+                          </mat-form-field>
+                        </div>
+
+                        <div class="container-fluid"> 
+                            <div class="d-flex justify-content-center">
+                              <mat-form-field appearance="fill">
+                                <mat-label>Doğum Tarihi</mat-label>
+                                <input matInput>
+                                <input type="date">
+                              </mat-form-field>
+                            </div>
+
+                            <div class="container-fluid"> 
+                                <div class="d-flex justify-content-center">
+                                  <mat-form-field appearance="fill">
+                                    <mat-label>Başlama Tarihi</mat-label>
+                                    <input matInput>
+                                    <input type="date">
+                                  </mat-form-field>
+                                </div>
+
+                                <div class="container-fluid"> 
+                                    <div class="d-flex justify-content-center">
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>Ayrılma Tarihi</mat-label>
+                                        <input matInput>
+                                        <input type="date">
+                                      </mat-form-field>
+                                    </div>
+
+
+                                          <div class="container-fluid">
+                                            <div class="d-flex justify-content-center">
+                                              <mat-form-field appearance="fill">
+                                                <mat-label>Engel</mat-label>
+                                                <mat-select>
+                                                  <mat-option>None</mat-option>
+                                                  <mat-option *ngFor="let personelEngel of personelEngeller" [value]="personelEngel">{{personelEngel}}</mat-option>
+                                                </mat-select>
+                                              </mat-form-field>
+                                            </div> 
+
+                       
+                                                  <div class="container-fluid">
+                                                    <div class="d-flex justify-content-center">
+                                                      <mat-form-field appearance="fill">
+                                                        <mat-label>Kan Grubu</mat-label>
+                                                        <mat-select>
+                                                          <mat-option>None</mat-option>
+                                                          <mat-option *ngFor="let personelKangrubu of personelKangrublari" [value]="personelKangrubu">{{personelKangrubu}}</mat-option>
+                                                        </mat-select>
+                                                      </mat-form-field>
+                                                    </div> 
+
+                                                
+                                                          <div class="container-fluid">
+                                                            <div class="d-flex justify-content-center">
+                                                              <mat-form-field appearance="fill">
+                                                                <mat-label>Mezuniyet</mat-label>
+                                                                <mat-select>
+                                                                  <mat-option>None</mat-option>
+                                                                  <mat-option *ngFor="let mezuniyet of mezuniyetler" [value]="mezuniyet">{{mezuniyet}}</mat-option>
+                                                                </mat-select>
+                                                              </mat-form-field>
+                                                            </div> 
+
+                                                            
+                                                                  <div class="container-fluid">
+                                                                    <div class="d-flex justify-content-center">
+                                                                      <mat-form-field appearance="fill">
+                                                                        <mat-label>Ehliyet Sınıfı</mat-label>
+                                                                        <mat-select>
+                                                                          <mat-option>None</mat-option>
+                                                                          <mat-option *ngFor="let ehliyetSinifi of ehliyetSiniflari" [value]="ehliyetSinifi">{{ehliyetSinifi}}</mat-option>
+                                                                        </mat-select>
+                                                                      </mat-form-field>
+                                                                    </div> 
+
+                                                                  
+                                                                          <div class="container-fluid">
+                                                                            <div class="d-flex justify-content-center">
+                                                                              <mat-form-field appearance="fill">
+                                                                                <mat-label>Medeni Hali</mat-label>
+                                                                                <mat-select>
+                                                                                  <mat-option>None</mat-option>
+                                                                                  <mat-option *ngFor="let medeniHali of medeniHalleri" [value]="medeniHali">{{medeniHalleri}}</mat-option>
+                                                                                </mat-select>
+                                                                              </mat-form-field>
+                                                                            </div> 
+
+                                                                            <div class="container-fluid">
+                                                                              <div class="d-flex justify-content-center">
+                                                                                <section class="example-section">
+                                                                                  <mat-checkbox class="example-margin">Tutanak</mat-checkbox>
+                                                                                </section>
+                                                                              </div> 
+                                                        
+                                                                            <div class="container-fluid">
+                                                                                  <div class="d-flex justify-content-center">
+                                                                                    <mat-form-field appearance="fill">
+                                                                                      <mat-label>Zanaat</mat-label>
+                                                                                      <mat-select>
+                                                                                        <mat-option>None</mat-option>
+                                                                                        <mat-option *ngFor="let personelZanaat of personelZanaatlar" [value]="personelZanaat">{{personelZanaat}}</mat-option>
+                                                                                      </mat-select>
+                                                                                    </mat-form-field>
+                                                                                  </div> 
+
+                                                                                  <div class="container-fluid">
+                                                                              <div class="d-flex justify-content-center">
+                                                                                <section class="example-section">
+                                                                                  <mat-checkbox class="example-margin">İleri sürüş teknikleri:</mat-checkbox>
+                                                                                </section>
+                                                                              </div> 
+
+                                                                              <div class="container-fluid">
+                                                                                <div class="d-flex justify-content-center">
+                                                                                  <section class="example-section">
+                                                                                    <mat-checkbox class="example-margin">Kalibrasyon Eğitimi:</mat-checkbox>
+                                                                                  </section>
+                                                                                </div> 
+
+                                                                                <div class="container-fluid">
+                                                                                  <div class="d-flex justify-content-center">
+                                                                                    <section class="example-section">
+                                                                                      <mat-checkbox class="example-margin">CBS Tabanlı Yazılım Eğitimi:</mat-checkbox>
+                                                                                    </section>
+                                                                                  </div> 
+
+                                                                                  <div class="container-fluid">
+                                                                                    <div class="d-flex justify-content-center">
+                                                                                      <section class="example-section">
+                                                                                        <mat-checkbox class="example-margin">Kapalı Alan Eğitimi:</mat-checkbox>
+                                                                                      </section>
+                                                                                    </div> 
+
+                                                                                    <div class="container-fluid">
+                                                                                      <div class="d-flex justify-content-center">
+                                                                                        <section class="example-section">
+                                                                                          <mat-checkbox class="example-margin">Kene Eğitimi:</mat-checkbox>
+                                                                                        </section>
+                                                                                      </div> 
+
+                                                                                      <div class="container-fluid">
+                                                                                        <div class="d-flex justify-content-center">
+                                                                                          <section class="example-section">
+                                                                                            <mat-checkbox class="example-margin">İlaçlama Cihazları Eğitimi:</mat-checkbox>
+                                                                                          </section>
+                                                                                        </div> 
+
+                                                                                        <div class="container-fluid">
+                                                                                          <div class="d-flex justify-content-center">
+                                                                                            <section class="example-section">
+                                                                                              <mat-checkbox class="example-margin">SRC2 Eğitimi:</mat-checkbox>
+                                                                                            </section>
+                                                                                          </div> 
+                                                                                    
+                                                                                          <div class="container-fluid">
+                                                                                            <div class="d-flex justify-content-center">
+                                                                                              <section class="example-section">
+                                                                                                <mat-checkbox class="example-margin">SRC4 Eğitimi:</mat-checkbox>
+                                                                                              </section>
+                                                                                            </div> 
+                                                                                  
+                                                                                            <div class="container-fluid">
+                                                                                              <div class="d-flex justify-content-center">
+                                                                                                <section class="example-section">
+                                                                                                  <mat-checkbox class="example-margin">Yangın ve Acil Kurtarma:</mat-checkbox>
+                                                                                                </section>
+                                                                                              </div> 
+
+                                                                                              <div class="container-fluid">
+                                                                                                <div class="d-flex justify-content-center">
+                                                                                                  <section class="example-section">
+                                                                                                    <mat-checkbox class="example-margin">İlk Yardım Eğitimi:</mat-checkbox>
+                                                                                                  </section>
+                                                                                                </div> 
+
+                                                                                                <div class="container-fluid">
+                                                                                                  <div class="d-flex justify-content-center">
+                                                                                                    <section class="example-section">
+                                                                                                      <mat-checkbox class="example-margin">Karasinek Eğitimi:</mat-checkbox>
+                                                                                                    </section>
+                                                                                                  </div> 
+
+                                                                                                  <div class="container-fluid">
+                                                                                                    <div class="d-flex justify-content-center">
+                                                                                                      <section class="example-section">
+                                                                                                        <mat-checkbox class="example-margin">İş Güvenliği Eğitimi:</mat-checkbox>
+                                                                                                      </section>
+                                                                                                    </div> 
+
+                                                                                                    <div class="container-fluid">
+                                                                                                      <div class="d-flex justify-content-center">
+                                                                                                        <section class="example-section">
+                                                                                                          <mat-checkbox class="example-margin">Kışlak Alan 2015  Eğitimi:</mat-checkbox>
+                                                                                                        </section>
+                                                                                                      </div> 
+
+                                                                                                      <div class="container-fluid">
+                                                                                                        <div class="d-flex justify-content-center">
+                                                                                                          <section class="example-section">
+                                                                                                            <mat-checkbox class="example-margin">Sivrisinek 2015 Eğitimi:</mat-checkbox>
+                                                                                                          </section>
+                                                                                                        </div> 
+
+                                                                                                        <div class="container-fluid">
+                                                                                                          <div class="d-flex justify-content-center">
+                                                                                                            <section class="example-section">
+                                                                                                              <mat-checkbox class="example-margin">Biyosidal uygulayıcı eğitimi:</mat-checkbox>
+                                                                                                            </section>
+                                                                                                          </div> 
+
+                                                                                                          <div class="container-fluid">
+                                                                                                            <div class="d-flex justify-content-center">
+                                                                                                              <section class="example-section">
+                                                                                                                <mat-checkbox class="example-margin">Kemirgenle mücadele eğitimi:</mat-checkbox>
+                                                                                                              </section>
+                                                                                                            </div> 
+
+                                                                                                            
+                                                                                                          <div class="container-fluid">
+                                                                                                            <div class="d-flex justify-content-center">
+                                                                                                              <section class="example-section">
+                                                                                                                <mat-checkbox class="example-margin">Oryantasyon eğitimi:</mat-checkbox>
+                                                                                                              </section>
+                                                                                                            </div> 
+                                                                                    
+                                                                                  
+                                                                                
+                                                                              
+                                                                            
+                                                                                
+                         
+                                       
+</div>
+</div>
+
+                
+                               
+        
+                       
+
+               
+                           
+
+                    
+                  

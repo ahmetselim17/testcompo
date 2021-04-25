@@ -18,15 +18,17 @@ export const routes: Routes = [
 
 
   {
-    path:'test2',
-   loadChildren:()=>import('./test2/test2.module').then(m=>m.Test2Module)
+    path:'personel',
+   loadChildren:()=>import('./personel/personel.module').then(m=>m.PersonelModule)
   },
 
 
   {
     path:'zimmet',
    loadChildren:()=>import('./zimmet/zimmet.module').then(m=>m.ZimmetModule)
-  }
+  },
+ 
+
 
 ];
 
